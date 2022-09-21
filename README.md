@@ -113,4 +113,6 @@ Model Machine learning yang paling tepat untuk memprediksi pendapatan kotor supe
 [2] Harahap, M., Rozi, F., Yennimar, Y., & Siregar, S. D. (2021). Analisis Wawasan Penjualan Supermarket dengan Data Science. Data Sciences Indonesia (DSI), 1(1), 1-7.
 
 [3] Riza, F. (2021). Analisis dan Prediksi Data Penjualan Menggunakan Machine Learning dengan Pendekatan Ilmu Data. Data Sciences Indonesia (DSI), 1(2), 62-68.
+
+
 ---Ini adalah bagian akhir laporan---
