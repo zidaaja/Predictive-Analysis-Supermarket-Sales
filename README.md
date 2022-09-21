@@ -71,13 +71,13 @@ Gambar 2. pairplot gross income
 ## Data Preparation
 Untuk tahapan data preparation yang saya lakukan yaitu:
 ### One-Hot-Encoding
-Melakukan Encoding fitur dengan menggunakan _One-hot-encoding_ untuk mengubah seluruh variabel kategori menjadi numerik, yaitu variabel "Branch, City, Customer type, Gender, Product line, Time, Payment, dan day".
+Melakukan Encoding fitur dengan menggunakan _One-hot-encoding_ untuk mengubah seluruh variabel kategori, yaitu variabel "Branch, City, Customer type, Gender, Product line, Time, Payment, dan day". Hal ini dilakukan untuk mengubah seluruh tipe data object menjadi numerik, yaitu 0 dan 1 agar memudahkan ketika nanti data digunakan pada model. 
 ### Reduksi dimensi
-Reduksi dimensi dengan _Principal Component Analysis_ (PCA) untuk mengurangi fitur yang sama atau yang memiliki korelasi tinggi, yaitu pada variabel "Tax 5%, Total, dan cogs".
+Reduksi dimensi dengan _Principal Component Analysis_ (PCA) untuk mengurangi fitur yang sama atau yang memiliki korelasi tinggi, yaitu pada variabel "Tax 5%, Total, dan cogs". Fitur atau variabel tersebut memiliki korelasi yang tinggi ketika dilihat melalui heatmap, oleh sebab itu dilakukan redudensi dimensi dengan PCA untuk mengurangi data-data yang berulang dan memfokuskan pada satu PCA dan memudahkan dalam model nanti.
 ### Splitting dataset
-Membagi dataset dengan fungsi train_test_split dari library sklearn.
+Membagi dataset dengan fungsi train_test_split dari library sklearn. Data dibagi menjadi 80% data _train_ dan 20% data _test_ hal ini akan berpengaruh ketika diuji.
 ### Standarisasi dataset
-Melakukan standarisasi dengan _standard scaler_ untuk mengubah nilai mean menjadi 0 dan standar deviasi 1.
+Melakukan standarisasi dengan _standard scaler_ untuk mengubah nilai mean menjadi 0 dan standar deviasi 1. Data numerik yang akan digunakan untuk training dicari standar deviasi nya agar ketika dibandingkan dengan data yang lain tidak terlalu tinggi.
 
 ## Modeling
 Model yang digunakan pada projek ini ada 3 yaitu _K-Nearest Neighbor, Random Forest, dan Boosting Algorithm_. Pada _K-Nearest Neighbor_ menggunakan parameter n_neighbors=10, pada _Random Forest_ menggunakan parameter n_estimators=50, max_depth=16, random_state=55, n_jobs=-1, dan pada _Boosting Algorithm_ menggunakan parameter learning_rate=0.05, random_state=55. 
