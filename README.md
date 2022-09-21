@@ -97,6 +97,7 @@ Pada baris KNN menunjukan error _train_ 0.003591 dan _test_ 0.004173, pada baris
 <img width="300" alt="image" src="https://user-images.githubusercontent.com/102134676/191325558-ee0f90ca-037f-4bf3-a54c-dba202a9e3b9.png">
 
 Gambar 4. Plot nilai MSE
+
 Dapat dilihat bahwa model dengan _Random Forest_ menghasilkan error yang paling sedikit, yaitu 0.000001 pada data _train_, dan	0.000004 pada data _test_. Sedangkan pada model K-Nearest Neighbor menghasilkan error yang paling tinggi , yaitu 0.003591 pada data _train_, dan	0.004173 pada data _test_.
 
 <img width="354" alt="image" src="https://user-images.githubusercontent.com/102134676/191326611-d0631a5a-88d7-4097-9d34-e105b4d36c79.png">
